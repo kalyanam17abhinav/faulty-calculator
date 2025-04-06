@@ -4,19 +4,19 @@
     box-sizing: border-box;
 }
 
-h2, pre{
+h2, p{
     text-align: center;
 }
 
-pre{
+p{
    /* border: 1px solid red; */
    font-size: 15px;
 }
 
 .main-div{
     border: 1px solid red;
-    height: 650px;
-    width: 650px;
+    height: 400px;
+    width: 350px;
     margin:0 auto;
     background-color: black;
 }
