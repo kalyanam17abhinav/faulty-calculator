@@ -4,18 +4,17 @@
     box-sizing: border-box;
 }
 
-h2, p{
+h2, p {
     text-align: center;
 }
 
-p{
-   /* border: 1px solid red; */
-   font-size: 15px;
+.p{
+    font-size: 15px;
 }
 
 .main-div{
     border: 1px solid red;
-    height: 400px;
+    height: 500px;
     width: 350px;
     margin:0 auto;
     background-color: black;
@@ -27,7 +26,6 @@ p{
     width: 99%;
     margin: 0.1% auto;
     background-color: rgb(121, 232, 236);
-    /* cursor: pointer; */
 }
 
 .result{
@@ -40,6 +38,8 @@ p{
     font-size: 40px;
     text-align: right;
     transform: scaleY(1.75);
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
 .buttons{
@@ -53,11 +53,6 @@ p{
     /* grid-template-rows: auto auto/ auto auto; */
     gap: 1px;
 }
-
-
-/* .buttons > div:nth-child(19){
-    grid-column: span 2;
-} */
 
 .buttons > div:nth-child(12){
     grid-row: span 2;
@@ -77,9 +72,4 @@ p{
 .button:hover{
     transform: scale(1.01);
     background-color: rgb(62, 237, 62);
-}
-
-.equals{
-    height: 100%;
-    width: 100%;
 }
