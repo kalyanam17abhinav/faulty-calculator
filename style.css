@@ -1,0 +1,85 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h2, pre{
+    text-align: center;
+}
+
+pre{
+   /* border: 1px solid red; */
+   font-size: 15px;
+}
+
+.main-div{
+    border: 1px solid red;
+    height: 650px;
+    width: 650px;
+    margin:0 auto;
+    background-color: black;
+}
+
+.display{
+    border: 1px solid blue;
+    height: 25%;
+    width: 99%;
+    margin: 0.1% auto;
+    background-color: rgb(121, 232, 236);
+    /* cursor: pointer; */
+}
+
+.result{
+    /* border: 1px solid red; */
+    height: 80px;
+    width: 95%;
+    margin: 0 auto;
+    position: relative;
+    top: 40px;
+    font-size: 40px;
+    text-align: right;
+    transform: scaleY(1.75);
+}
+
+.buttons{
+    background-color: yellow;
+    margin-left: 0.5%;
+    border: 1px solid black;
+    height: 73.5%;
+    width: 99%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    /* grid-template-rows: auto auto/ auto auto; */
+    gap: 1px;
+}
+
+
+/* .buttons > div:nth-child(19){
+    grid-column: span 2;
+} */
+
+.buttons > div:nth-child(12){
+    grid-row: span 2;
+}
+
+.button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid green;
+    background-color: lightgreen;
+    cursor: pointer;
+    transition: transform 0.1s ease-in;
+    font-size: 25px;
+}
+
+.button:hover{
+    transform: scale(1.01);
+    background-color: rgb(62, 237, 62);
+}
+
+.equals{
+    height: 100%;
+    width: 100%;
+}
